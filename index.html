@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | 방수현</title>
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="img/main_icon.ico" sizes="16x16">
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/8cea6542ee.js" crossorigin="anonymous"></script>
+</head>
+<body onclick="scrollCheck()">
+    <header>
+        <div class="header_wrap">
+            <article class="main_logo"><a href="index.html"><figure></figure></a></article>
+            <div class="main_menu" onclick="navOpen()">
+                <strong>menu</strong>
+                <div class="main_menu_pos">
+                    <span class="main_menu_btn1"></span>
+                    <span class="main_menu_btn2"></span>
+                    <span class="main_menu_btn3"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="nav">
+        <div class="nav_wrap">
+            <div class="nav_inner">
+                <h1><a href="index.html" title="메인페이지 이동">HOME</a></h1>
+                <h1><a href="https://bangsuhyun.github.io/portfolio1/" title="포트폴리오2 페이지 이동">PORTFOLIO_2</a></h1>
+                <h1><a href="https://github.com/bangsuhyun?tab=repositories" title="깃허브 이동">GITHUB</a></h1>
+            </div>
+        </div>
+    </div>
+    <main id="fullpage">
+        <section class="section hero" id="hero">
+            <div class="hero_title">
+                <h2>안녕하세요!</h2>
+                <h2><span>프론트엔드</span>개발자</h2>
+                <p>방수현 입니다!</p>
+                <p><a href="#">About Us</a></p>
+            </div>
+        </section>
+        <section class="section about" id="about">
+            <div class="about_wrap">
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1>ETIQA - 4인 프로젝트</h1>
+                        <h3>Art / Print</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing   elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1>Apple</h1>
+                        <h3>Photography / App</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1></h1>
+                        <h3>Photography</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1></h1>
+                        <h3>Photography</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1></h1>
+                        <h3>Photography</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1></h1>
+                        <h3>Photography</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1></h1>
+                        <h3>Photography</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div class="about_slide">
+                    <div class="about_slide_text">
+                        <h1></h1>
+                        <h3>Photography</h3>
+                        <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla. 
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+                <div id="prev_bt" onclick="movePrev()" onmouseover="prevOver()" onmouseout="prevOut()">
+                    <span class="prev_bt_before"></span>
+                    <span class="prev_bt_after"></span>
+                </div>
+                <div id="next_bt" onclick="moveNext()" onmouseover="nextOver()" onmouseout="nextOut()">
+                    <span class="next_bt_before"></span>
+                    <span class="next_bt_after"></span>
+                </div>
+
+                <div class="about_frame_wrap">
+                    <div class="about_frame"></div>
+                    <div class="about_frame"></div>
+                    <div class="about_frame"></div>
+                    <div class="about_frame"></div>
+                    <div class="about_frame"></div>
+                    <div class="about_frame"></div>
+                    <div class="about_frame"></div>
+                    <div class="about_frame"></div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section project">
+            <div class="project_wrap">
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란1</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란2</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란3</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란4</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란5</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란6</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란7</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_slide">
+                    <div class="project_pos">
+                        <div class="project_title">
+                            <p>설명란8</p>
+                        </div>
+                        <div class="project_img">
+                            <p>이미지 첨부</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="prev_bt" onclick="movePrev()" onmouseover="prevOver()" onmouseout="prevOut()">
+                    <span class="prev_bt_before"></span>
+                    <span class="prev_bt_after"></span>
+                </div>
+                <div id="next_bt" onclick="moveNext()" onmouseover="nextOver()" onmouseout="nextOut()">
+                    <span class="next_bt_before"></span>
+                    <span class="next_bt_after"></span>
+                </div>
+            </div>
+        </section>
+        <section class="section sub">
+            <div class="sub_container">
+                <div class="sub_title">
+                    <div class="sub_title_wrap">
+                        <h2>About</h2>
+                        <img src="">
+                        <img src="">
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contact" id="contact">
+            <div class="contact_title">
+                <h2>Contact</h2>
+                <p>For questions about our company and products found on our stores. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.</p>
+            </div>
+            <div class="contact_inner_wrap">
+                <div class="contact_contact">
+                    <p>
+                        Call: 01 234 567 89 <br><br>
+                        Email: bangt9687@naver.com
+                    </p>
+                </div>
+                <div class="contact_address">
+                    <p>
+                        Company address<br>
+                        12 Street Turning Place<br>
+                        South Est, Antartica
+                    </p>
+                </div>
+            </div>
+            <div class="contact_footer">
+                <p>Send Message</p>
+                <article class="instagram">
+                    <img src="img/logo_instagram.png">
+                </article>
+            </div>
+            <div class="contact_img">
+                <figure><img src="img/hyangah_img.jpg"></figure>
+                <!-- 본인사진 변경 -->
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+    <script>
+        new fullpage('#fullpage',{
+            licenseKey:'',
+            sectionsColor: ['#2e2d33','#2e2d33','#2e2d33','#2e2d33','#2e2d33'],
+            navigation:true, //네비게이션바 나타내기
+            scrollingSpeed: 1000, //스크롤 속도
+        });
+    </script>
+</body>
+</html>
